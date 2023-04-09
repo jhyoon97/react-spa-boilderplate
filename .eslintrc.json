@@ -48,6 +48,8 @@
     // 비활성화: styled-reset import 문제
     "import/no-extraneous-dependencies": "off",
     // 비활성화: prettier는 자동 저장으로 포맷팅 역할만 맡김
-    "prettier/prettier": "off"
+    "prettier/prettier": "off",
+    // 부분 비활성화: emotion을 위해 css만 규칙 무시하도록 설정
+    "react/no-unknown-property": ["error", { "ignore": ["css"] }]
   }
 }
