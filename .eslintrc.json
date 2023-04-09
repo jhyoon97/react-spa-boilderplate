@@ -18,6 +18,7 @@
     "plugin:@typescript-eslint/recommended",
     "airbnb",
     "airbnb-typescript",
+    "plugin:react/jsx-runtime",
     "plugin:prettier/recommended"
   ],
   "rules": {
