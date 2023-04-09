@@ -1,12 +1,23 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 import RouteList from "./RouteList";
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+    },
+  },
+});
 
 const App = () => {
   return (
     <BrowserRouter>
-      <RouteList />
+      <QueryClientProvider client={queryClient}>
+        <RouteList />
+      </QueryClientProvider>
     </BrowserRouter>
   );
 };
