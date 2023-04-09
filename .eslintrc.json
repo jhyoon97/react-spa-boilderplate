@@ -10,6 +10,7 @@
       "jsx": true
     }
   },
-  "extends": ["eslint:recommended", "airbnb"],
+  "plugins": ["prettier"],
+  "extends": ["eslint:recommended", "airbnb", "plugin:prettier/recommended"],
   "rules": {}
 }
