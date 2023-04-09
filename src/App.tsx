@@ -1,7 +1,14 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
+
+import RouteList from "./RouteList";
 
 const App = () => {
-  return <div>hello world</div>;
+  return (
+    <BrowserRouter>
+      <RouteList />
+    </BrowserRouter>
+  );
 };
 
 export default App;
