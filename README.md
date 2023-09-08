@@ -4,7 +4,7 @@
 
 - yarn berry
   - zero-install 사용
-  - pnp 비활성화, node_modules 사용
+  - pnp 사용
 
 ## 2. 코드 스타일
 
